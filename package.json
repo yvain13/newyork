@@ -1,0 +1,52 @@
+{
+  "name": "newyork",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AIUX application: NewYork",
+  "scripts": {
+    "build": "now-sdk build",
+    "doctor": "aiux doctor",
+    "dev": "now-sdk run dev",
+    "deploy": "now-sdk install",
+    "deploy:reinstall": "now-sdk install --reinstall",
+    "lint": "eslint .",
+    "agent:skills": "node scripts/setup-agent-skills.mjs",
+    "postinstall": "node scripts/setup-agent-skills.mjs"
+  },
+  "dependencies": {
+    "@servicenow/aiux": "latest",
+    "lit": "^3.2.1",
+    "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.28.0",
+    "@babel/plugin-proposal-decorators": "^7.29.0",
+    "@eslint/js": "^9.39.0",
+    "@servicenow/agent-pack-aiux": "latest",
+    "@servicenow/agent-pack-horizon-design-knowledge": "latest",
+    "@servicenow/eslint-plugin-aiux-a11y": "latest",
+    "@servicenow/eslint-plugin-aiux-app": "latest",
+    "@servicenow/eslint-plugin-aiux-i18n": "latest",
+    "@servicenow/eslint-plugin-aiux-ssr": "latest",
+    "@servicenow/eslint-plugin-aiux-style": "latest",
+    "@servicenow/sdk": "4.11.2",
+    "eslint": "^9.0.0",
+    "globals": "^16.0.0"
+  },
+  "engines": {
+    "node": ">=24.14.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@servicenow/aiux-components-condition-builder",
+      "@servicenow/aiux-document-viewer",
+      "@swc/core",
+      "core-js",
+      "isolated-vm",
+      "libxmljs2",
+      "sn-http-request"
+    ]
+  },
+  "packageManager": "pnpm@11.25.0+sha512.5cde925b4f075f725eb71fbae18a42ffe784524789f19b61c731cb8721ec28aaee160e01a8d5af4fedb2a42cdbf300efe23db356b0d4a17b4d63e11f8ab7c956"
+}

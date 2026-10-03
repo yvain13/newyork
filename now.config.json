@@ -1,0 +1,15 @@
+{
+  "scope": "x_1433234_newyork",
+  "scopeId": "d30daaf3a57f42cba92910ea2f662caf",
+  "name": "NewYork",
+  "metadataDir": "src/plugin-xmls",
+  "appOutputDir": "dist-metadata/app",
+  "packageSourceCodeOnInstance": true,
+  "staticContent": {
+    "assets": {
+      "./public/**": {
+        "publicPath": "[$config.aiux.basename]/public"
+      }
+    }
+  }
+}

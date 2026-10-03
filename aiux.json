@@ -1,0 +1,11 @@
+{
+  "name": "NewYork",
+  "basename": "newyork",
+  "landing": "/home",
+  "development": {
+    "token": ""
+  },
+  "build": {
+    "exclude": ["**/*.test.js", "**/test/**"]
+  }
+}
